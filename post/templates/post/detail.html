@@ -1,0 +1,22 @@
+{% extends 'post/base.html' %}
+{% block title %} 
+    UNSAID PROJECT
+{% endblock title %}
+{% block content %}
+
+    <!-- Post Detail View  -->
+    <section id="detailview">
+        <div class="container">
+            <div class="row">
+                {% if postnumber %}
+                    <div class="messages center col-lg-4" style="margin: 0 30% 5% 30%; width: 40%;">
+                        <h5>{{ postnumber.name }}</h5>
+                        <p class="message-content">{{ postnumber.content }}</p>
+                    </div>
+                {% endif %}
+        </div>
+    </section>
+
+
+
+{% endblock content %}

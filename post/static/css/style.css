@@ -1,0 +1,74 @@
+
+/* Navbar Section */
+.navbar{
+    padding: 3%;
+}
+
+.nav-center{
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+}
+
+.nav-item{
+    margin: 0 3%;
+}
+
+/* Title Section  */
+#title{
+    padding: 3% 7%;
+    text-align: center;
+}
+
+.heading{
+    font-size: 70px;
+    margin-top: 8%;
+    margin-bottom: 15%;
+}
+
+/* Messaging section */
+#message-section{
+    margin: 3% 0;
+}
+
+#message-section a{
+    text-decoration: none;
+    color: #000;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.messages{
+    border: 1px solid #000;
+    margin-bottom: 8px;
+}
+
+h5{
+    text-align: center;
+    font-size: 30px;
+}
+
+.message-content{
+    background: tomato;
+    height: 300px;
+    padding: 5%;
+    font-size: 23px;
+}
+
+
+/* Submit Section  */
+form{
+    width: 60%;
+    margin : 2% 20% 2% 20%;
+}
+
+
+
+/* Footer section  */
+footer{
+    text-align: center;
+    
+}
+

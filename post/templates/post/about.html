@@ -1,0 +1,19 @@
+{% extends 'post/base.html' %}
+{% block title %}
+UNSAID PROJECT
+{% endblock title %}
+{% block content %}
+
+
+<!-- About Section  -->
+<div class="container">
+<h1 >THE UNSAID PROJECT</h1><br><br>
+{% if number %}
+<p class="aboutdescription">The UnsaidProject is a collection of over {{ number }} unsent text messages to first loves. Messages are submitted
+    anonymously from people all over the world. Ajay Kumar started the Unsaid Project in 2022 to help people let it out of mind . The term first
+    love is open to interpretation and messages have been submitted to lovers, best friends, exes, parents, siblings,
+    and even pets. All texts are submitted and stored digitally in an online archive which can be sorted by name. The Unsaid Project aims to provide an emotional outlet for those that need it.</p>
+</div>
+{% endif %}
+
+{% endblock content %}

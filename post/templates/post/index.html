@@ -1,0 +1,40 @@
+{% extends 'post/base.html' %}
+{% block title %} 
+    UNSAID PROJECT
+{% endblock title %}
+{% block content %}
+
+
+    <!-- Title  -->
+    <section id="title">
+        <div class="title-section">
+            <h1 class="heading">THE UNSAID PROJECT</h1>
+            <h3>A collection of Unsent Text Messages To First Loves</h3>
+            {% if numbers %}
+            <p>{{numbers}} Posts Found</p>
+            {% endif %}
+        </div>
+        
+    </section>
+
+    <!-- Messages Area  -->
+    <section id="message-section">
+        <div class="container">
+        <div class="row">
+        {% for message in messages %}
+        
+            <div class="messages col-lg-4 col-md-6 col-sm-6">
+                <a href="detail/{{ message.id }}/">
+                <h5>{{ message.name }}</h5>
+                <p class="message-content">{{ message.content }}</p>
+                </a> 
+
+            </div>
+           
+        {% endfor %}
+        </div>
+        </div>
+    </section>
+
+
+{% endblock content %}

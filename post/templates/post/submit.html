@@ -1,0 +1,20 @@
+{% extends 'post/base.html' %}
+{% block title %} 
+    UNSAID PROJECT
+{% endblock title %}
+{% block content %}
+
+
+    <section id="submit">
+        <div class="container">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <input type="text" class="form-control" name="name" placeholder="Enter the name of reciever.."><br>
+                <textarea name="messagecontent" class="form-control" id="" cols="30" rows="10" placeholder="Enter your message.."></textarea><br>
+                <input class="btn btn-primary" type="submit" value="SEND">
+            </form>
+        </div>
+    </section>
+
+
+{% endblock content %}
