@@ -9,18 +9,24 @@
     <!-- Title  -->
     <section id="title">
         <div class="title-section">
-            <h1 class="heading">THE UNSENT PROJECT</h1>
+            <h1 class="heading">THE UNSAID PROJECT</h1>
             <h3>A collection of Unsent Text Messages To First Loves</h3>
             <p>4,766,156 Posts Found</p>
         </div>
-        <form action="">
-            <div class="row search-area">
-                <input class="col-lg-6 search-box" type="text" placeholder="Search for a name...">
-                <button class="btn btn-primary col-lg-1" type="submit" >FILTER</button>
-            </div>
-        </form>
+        
     </section>
 
+    <!-- Message Section  -->
+    <section id="message-section">
+        <div class="message-screen">
+            <div>
+                {% for mail in messages %}
+                <p>{{ mail.name }}</p>
+                <p>{{ mail.message }}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
 
 
 

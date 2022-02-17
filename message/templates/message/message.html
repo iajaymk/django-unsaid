@@ -7,7 +7,17 @@
 
     <!-- Message Section  -->
     <section id="message-section">
-        <div class="message-screen"></div>
+        <div class="message-screen">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <input type="text">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <div class="">
+                    <input type="submit" value="Send">
+                    <button type="button">Back</button>
+                </div>
+            </form>
+        </div>
     </section>
 
 
